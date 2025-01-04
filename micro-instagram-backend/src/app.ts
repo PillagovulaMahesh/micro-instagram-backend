@@ -8,7 +8,11 @@ const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
+
+// User routes
 app.use('/api/users', userRoutes);
+
+// Post routes
 app.use('/api/posts', postRoutes);
 
 export default app;
